@@ -109,7 +109,7 @@ namespace dovala_iresoft
         private void Count(string? path = null)
         {
             _counters.Reset();
-            StartOperation(_counters.CountLineAsync,then: UpdateLabels,path: path);
+            StartOperation(_counters.CountLine,then: UpdateLabels,path: path);
         }
         private void Copy(string line)
         {
